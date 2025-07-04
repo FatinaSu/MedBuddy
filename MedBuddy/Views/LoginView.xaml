@@ -1,0 +1,66 @@
+﻿<UserControl x:Class="MedBuddy.Views.LoginView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MedBuddy.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid Background="{StaticResource BackgroundCard}">
+        <Border Style="{StaticResource CardStyleElevated}" 
+                Width="400" 
+                VerticalAlignment="Center" 
+                HorizontalAlignment="Center">
+            <StackPanel>
+                <TextBlock Text="Anmeldung" 
+                          HorizontalAlignment="Center" 
+                          FontSize="24" 
+                          FontWeight="SemiBold"
+                          Foreground="{StaticResource TextPrimary}"
+                          Margin="0,0,0,24"/>
+                <StackPanel Margin="0,0,0,24" HorizontalAlignment="Center">
+                    <StackPanel Margin="0,0,0,16">
+                        <TextBlock Text="Benutzername" 
+                                  FontWeight="Medium"
+                                  Foreground="{StaticResource TextPrimary}"
+                                  Margin="0,0,0,4"/>
+                        <TextBox x:Name="txtBenutzername" 
+                                Height="36"
+                                Width="350"
+                                Padding="8"
+                                BorderThickness="2"
+                                BorderBrush="{StaticResource MedGray}"
+                                Background="{StaticResource Background}"
+                                VerticalContentAlignment="Center"/>
+                    </StackPanel>
+
+                    <StackPanel>
+                        <TextBlock Text="Passwort" 
+                                  FontWeight="Medium"
+                                  Foreground="{StaticResource TextPrimary}"
+                                  Margin="0,0,0,4"/>
+                        <PasswordBox x:Name="txtPasswort" 
+                                    Height="36"
+                                    Width="350"
+                                    Padding="8"
+                                    BorderThickness="2"
+                                    BorderBrush="{StaticResource MedGray}"
+                                    Background="{StaticResource Background}"
+                                    VerticalContentAlignment="Center"/>
+                    </StackPanel>
+                </StackPanel>
+                <StackPanel>
+                    <Button Content="Anmelden" 
+                           Style="{StaticResource ButtonStyle}" 
+                           Width="350"
+                           Margin="0,0,0,8"
+                           Click="Login_Click"/>
+                    <Button Content="Account erstellen" 
+                           Style="{StaticResource ButtonStyleSecondary}" 
+                           Width="350"
+                           Click="Register_Click"/>
+                </StackPanel>
+            </StackPanel>
+        </Border>
+    </Grid>
+</UserControl>

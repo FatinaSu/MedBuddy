@@ -1,0 +1,45 @@
+﻿<UserControl x:Class="MedBuddy.Views.ArztView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             mc:Ignorable="d"
+             d:DesignHeight="500" d:DesignWidth="830">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        
+        <!-- Tabs -->
+        <Grid Grid.Column="0" Background="#61B5E4">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <ListBox 
+                     Style="{StaticResource TabListBoxStyle}" 
+                     ItemContainerStyle="{StaticResource TabListBoxItemStyle}"
+                     ItemsSource="{Binding Tabs}"
+                     SelectedItem="{Binding SelectedTab, UpdateSourceTrigger=PropertyChanged}"
+                     DisplayMemberPath="Title"
+                     Grid.Row="0"
+                     VerticalAlignment="Stretch"
+                     Margin="0"/>
+
+            <!-- Abmelden Button -->
+            <Button Content="Abmelden"
+                        Style="{StaticResource AbmeldenButtonStyle}"
+                        Margin="0"
+                        Grid.Row="1"
+                        Padding="10"
+                        HorizontalAlignment="Stretch"
+                        Height="40"
+                        Click="Abmelden_Click"/>
+        </Grid>
+
+        <!-- Hauptinhalt -->
+        <ContentControl Grid.Column="1" Content="{Binding SelectedTab}"/>
+    </Grid>
+</UserControl>
+
