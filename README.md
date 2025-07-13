@@ -1,6 +1,7 @@
 # 💊 MedBuddy – Medikamentenerinnerungs-App
 
-MedBuddy ist eine benutzerfreundliche Windows-Web-App, die ältere Menschen bei der strukturierten und regelmäßigen Einnahme von Medikamenten unterstützt. Die App bietet individuelle Erinnerungsfunktionen, eine Tagebuchansicht für persönliche Einträge und eine Kommunikationsschnittstelle für Ärzte oder Pflegepersonal. 
+**MedBuddy** ist eine WPF-basierte Desktop-Anwendung zur Unterstützung von Patienten bei der täglichen Medikamenteneinnahme.  
+Die App wurde im Rahmen eines Projekts entwickelt und richtet sich sowohl an Patienten als auch an medizinisches Fachpersonal.
 
 ---
 
@@ -39,11 +40,6 @@ Entwicklung einer barrierearmen App mit klarer Benutzeroberfläche, automatisier
 - Optional: Kalenderfunktion
 
 ---
-
-# 💊 MedBuddy
-
-**MedBuddy** ist eine WPF-basierte Desktop-Anwendung zur Unterstützung von Patienten bei der täglichen Medikamenteneinnahme.  
-Die App wurde im Rahmen eines Projekts entwickelt und richtet sich sowohl an Patienten als auch an medizinisches Fachpersonal.
 
 ---
 
